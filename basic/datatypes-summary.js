@@ -28,9 +28,16 @@ let myObj = {
     age:22,
 }
 
-const myFunction = funtion()
+const myFunction = function()
 {
     console.log("Hellow world")
 }
 
 console.log(typeof bigNumber)
+
+// Stack(Primitive), Heap(Non-Primitive)
+
+let myYoutubename = "Utpaldotcom"
+let anothername = myYoutubename
+anothername="chaiaurcode"
+console.log(anothername)
