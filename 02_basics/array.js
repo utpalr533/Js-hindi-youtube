@@ -39,6 +39,10 @@ const myn1 = myarr.slice(1, 3)
 console.log(myn1);
 console.log("B", myarr)
 
+//Slice doesnt manupulate the current arrays
+//splice manupulates the current arrays and thats the difference between slice and spice 
+
+
 const myn2 = myarr.splice(1,3)
 console.log("C", myarr);
 
