@@ -15,18 +15,23 @@ const Jsuser = {
     isLoggedIn: false,
     lastLoginDays: ["Monday", "Saturday"]
 }
-console.log(Jsuser.name)
-console.log(Jsuser["full name"])
-console.log(Jsuser[mySym])
+// console.log(Jsuser.name)
+// console.log(Jsuser["full name"])
+// console.log(Jsuser[mySym])
 // console.log(Jsuser.full name)
 // myarray = ["U", "t"]
 
 Jsuser.email = "utpal@chatgpt.com"
-Object.freeze(Jsuser)
+//Object.freeze(Jsuser)
 Jsuser.email = "utpal@microsoft.com"
-console.log(Jsuser)
+//console.log(Jsuser)
 
-// Jsuser.greeting = function(){
-//     console.log("Hello Javascript user")
-// }
-// console.log(Jsuser.greeting())
+Jsuser.greeting = function(){
+   console.log("Hello Javascript user")
+}
+
+Jsuser.greetingTwo = function(){
+   console.log('Hello Javascript user, ' + this.name)
+}
+console.log(Jsuser.greeting())
+console.log(Jsuser.greetingTwo());
