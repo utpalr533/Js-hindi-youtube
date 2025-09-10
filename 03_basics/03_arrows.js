@@ -39,3 +39,6 @@ const user = {
 const addtwo = (num1, num2) => ({username:"utpal"}) // implicit return with parenthesis
 
 console.log(addtwo(5, 7))
+
+const myarray = [1, 2, 3, 4]
+//myarray.foreach()
