@@ -25,6 +25,17 @@ addTwoNumbers(5, "7")
 addTwoNumbers(5, null)
 
 const result = addTwoNumbers(5, 7)
-console.log("Result:", result) //undefined
+//console.log("Result:", result) //undefined
+ function loginUserMessage(username = "Computer"){
+  if (!username === undefined){
+    console.log("Please enter a username");
+    return;
+
+  }
+      return `${username} just logged in`
+ }
+console.log(loginUserMessage("Utpal"))
+console.log(loginUserMessage()) //undefined
+
 
 
