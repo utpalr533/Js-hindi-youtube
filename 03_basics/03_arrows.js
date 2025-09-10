@@ -35,7 +35,7 @@ const user = {
 // }
 
 
-//const addtwo = (num1, num2) => num1 + num2 // implicit return
+const addtwo = (num1, num2) => num1 + num2 // implicit return
 const addtwo = (num1, num2) => ({username:"utpal"}) // implicit return with parenthesis
 
 console.log(addtwo(5, 7))
