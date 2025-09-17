@@ -1,3 +1,8 @@
+Project related to DOM
+
+Project 1
+```javascript
+
 const clock = document.getElementById('clock')
 
 
@@ -8,3 +13,9 @@ setInterval(function(){
 //console.log(date.toLocaleTimeString())
 clock.innerHTML = date.toLocaleTimeString();
 }, 1000)
+
+
+
+
+
+```
