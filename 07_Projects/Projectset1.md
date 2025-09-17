@@ -1,3 +1,8 @@
+Project related to DOM
+
+Project 1 - Color Changer 
+```javascript
+
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
 buttons.forEach(function (button) {
@@ -19,3 +24,4 @@ buttons.forEach(function (button) {
     }
   });
 });
+```

@@ -1,3 +1,8 @@
+Project related to DOM
+
+Project 2
+```javascript
+
 const form = document.querySelector('form');
 
 form.addEventListener('submit', function (e) {
@@ -15,4 +20,4 @@ form.addEventListener('submit', function (e) {
     const bmi = (weight / ((height*height/1000)).toFixed(2) )
     results.innerHTML =`<span>${bmi}</span>`
   }
-});
+});```

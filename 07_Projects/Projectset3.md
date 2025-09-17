@@ -1,6 +1,6 @@
 Project related to DOM
 
-Project 1
+Project 3
 ```javascript
 
 const clock = document.getElementById('clock')
