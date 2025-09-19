@@ -14,7 +14,7 @@
     const sayDate = function(str){
         console.log(str, Date.now());  
     }
-    const intervalId = setInterval(sayDate, 1000, "hi")
+    const intervalId = setInterval(sayDate, 100, "hi")
     clearInterval(intervalId)
 const saydate = function(str){
     console.log(str , Date.now())
@@ -22,7 +22,7 @@ const saydate = function(str){
 let Interval;
 document.querySelector("#start")
 .addEventListener('click', function(){
- Interval = setInterval (saydate, 1000, 'Utpal')
+ Interval = setInterval (saydate, 100, 'Utpal')
 
 } )
 document.querySelector("#stop")
