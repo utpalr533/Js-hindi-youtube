@@ -12,7 +12,7 @@
             <li>
 <img width="200px" id="owl"
  src="https://images.pexels.com/photos/29215915/pexels-photo-29215915.jpeg" 
- alt="" onclick="alert('owl')">
+ alt="" onclick="alert('Owl')">
 </li>
 <li>
     <img width = "200px" id = "photoshop1" src="https://images.pexels.com/photos/33846963/pexels-photo-33846963.jpeg" alt="">
@@ -20,13 +20,58 @@
 <li>
     <img width = "200px" id = "photoshop2" src="https://images.pexels.com/photos/238631/pexels-photo-238631.jpeg" alt="">
 </li>
+<li><a style="color:aliceblue" href="https://google.com" id="Google">Google</a></li>
 
         </ul>
     </div>
 </body>
 <script>
-    document.getElementById('photoshop').addEventListener('click', function() {
-        alert('You clicked on the first image!');
-    });
+    // document.getElementById('owl').onclick = function() {
+    //     alert("Owl clicked");
+    // };
+     //type, timestamp, defaultPrevented
+    //target, toElement, srcElement, currentTarget
+    //clientX, clientY, pageX, pageY
+    //screenX, screenY, offsetX, offsetY
+    //which, button, buttons
+    //altkey, ctrlKey, shiftKey, metaKey keycode
+
+    //attachEvent()
+    //jQuery - on
+
+//     document.getElementById('images').addEventListener('click', function(e) { 
+//        console.log("clicked inside the ul"); 
+//     }, true);
+//     document.getElementById('owl').addEventListener('click', function(e) { 
+//        console.log("owl clicked"); 
+//        e.stopPropagation
+//     }, true);
+
+//    document.getElementById('Google').addEventListener('click', function(e) { 
+//        e.preventDefault();
+//        e.stopPropagation();
+//        console.log("google clicked"); 
+//     }, false);
+
+
+document.querySelector('#images').addEventListener('click', function(e){
+    console.log(e.target.tagName );
+    if(
+        e.target.tagName == 'IMG'){
+            console.log(e.target.id);
+            
+     let removeIt = e.target.parentNode;
+    removeIt.remove();
+        }
+
+
+    
+
+    removeIt.parentNode.removeChild(removeIt);
+    
+})
+
+//attachEvent()
+
 </script>
 </html>
